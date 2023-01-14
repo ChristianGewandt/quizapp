@@ -80,7 +80,7 @@ function answer(selection) {
         audioFail.play();
     }
     document.getElementById('next-button').disabled = false;
-    document.getElementById('question-container').classList.add('pointer-events-none');
+    document.getElementById('answer-container').classList.add('pointer-events-none');
 }
 
 
@@ -110,6 +110,7 @@ function resetAnswerButton() {
     document.getElementById('answer_3').parentNode.classList.remove('bg-success');
     document.getElementById('answer_4').parentNode.classList.remove('bg-danger');
     document.getElementById('answer_4').parentNode.classList.remove('bg-success');
+    document.getElementById('answer-container').classList.remove('pointer-events-none');
 }
 
 
